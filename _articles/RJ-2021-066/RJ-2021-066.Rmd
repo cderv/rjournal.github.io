@@ -1,7 +1,7 @@
 ---
 title: 'ROCnReg: An R Package for Receiver Operating Characteristic Curve Inference
   With and Without Covariates'
-descrition: |
+description: |
   This paper introduces the package ROCnReg that allows estimating the pooled ROC
    curve, the covariate-specific ROC curve, and the covariate-adjusted ROC curve by different methods,
    both from (semi) parametric and nonparametric perspectives and within Bayesian and frequentist
