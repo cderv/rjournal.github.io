@@ -1,6 +1,6 @@
 ---
 title: 'The bdpar Package: Big Data Pipelining Architecture for R'
-abstract: |
+descrition: |
   In the last years, big data has become a useful paradigm for taking advantage of multiple
    sources to find relevant knowledge in real domains (such as the design of personalized marketing
    campaigns or helping to palliate the effects of several fatal diseases). Big data programming tools and

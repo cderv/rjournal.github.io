@@ -1,7 +1,7 @@
 ---
 title: 'BayesSPsurv: An R Package to Estimate Bayesian (Spatial) Split-Population
   Survival Models'
-abstract: |
+description: |
   Survival data often include a fraction of units that are susceptible to an event of interest
    as well as a fraction of “immune” units. In many applications, spatial clustering in unobserved risk
    factors across nearby units can also affect their survival rates and odds of becoming immune. To

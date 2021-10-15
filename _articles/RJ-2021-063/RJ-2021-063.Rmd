@@ -1,6 +1,6 @@
 ---
 title: 'stratamatch: Prognostic Score Stratification Using a Pilot Design'
-abstract: |
+descrition: |
   Optimal propensity score matching has emerged as one of the most ubiquitous approaches
    for causal inference studies on observational data. However, outstanding critiques of the statistical
    properties of propensity score matching have cast doubt on the statistical efficiency of this technique,
