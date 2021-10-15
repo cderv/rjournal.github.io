@@ -93,7 +93,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished"/>
+  <meta property="article:published" itemprop="datePublished" content="2021-06-01"/>
   <meta property="article:created" itemprop="dateCreated" content="2021-06-01"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["2021-1_files/anchor-4.2.2/anchor.min.js","2021-1_files/bowser-1.9.3/bowser.min.js","2021-1_files/distill-2.2.21/template.v2.js","2021-1_files/header-attrs-2.9/header-attrs.js","2021-1_files/jquery-1.11.3/jquery.min.js","2021-1_files/popper-2.6.0/popper.min.js","2021-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","2021-1_files/tippy-6.2.7/tippy-light-border.css","2021-1_files/tippy-6.2.7/tippy.css","2021-1_files/tippy-6.2.7/tippy.umd.min.js","2021-1_files/webcomponents-2.0.0/webcomponents.js","2021-1.yml","RJ-2021-1.pdf"]}
+  {"type":"character","attributes":{},"value":["2021-1.yml","2021-1_files/anchor-4.2.2/anchor.min.js","2021-1_files/bowser-1.9.3/bowser.min.js","2021-1_files/distill-2.2.21/template.v2.js","2021-1_files/header-attrs-2.9/header-attrs.js","2021-1_files/jquery-1.11.3/jquery.min.js","2021-1_files/popper-2.6.0/popper.min.js","2021-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","2021-1_files/tippy-6.2.7/tippy-light-border.css","2021-1_files/tippy-6.2.7/tippy.css","2021-1_files/tippy-6.2.7/tippy.umd.min.js","2021-1_files/webcomponents-2.0.0/webcomponents.js","RJ-2021-1.pdf"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -145,10 +145,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   d-byline .byline {
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
   }
 
-  /*
   d-byline .byline h3 {
     margin-block-start: 1.5em;
   }
@@ -156,7 +155,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-byline .byline .authors-affiliations h3 {
     margin-block-start: 0.5em;
   }
-  */
 
   .authors-affiliations .orcid-id {
     width: 16px;
@@ -167,15 +165,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-bottom: 2px;
   }
 
-
-  d-title h1, d-title p, d-title figure,
-  d-abstract p, d-abstract b {
-    grid-column: page;
-  }
-
   d-title .dt-tags {
     margin-top: 1em;
-    grid-column: page;
+    grid-column: text;
   }
 
   .dt-tags .dt-tag {
@@ -188,7 +180,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 70%;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 3px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-weight: 500;
   }
 
@@ -246,10 +238,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   d-article>p>img {
     width: 100%;
-  }
-
-  d-article h1 {
-    line-height: 1.1em;
   }
 
   d-article h2 {
@@ -371,16 +359,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       height: 0;
       grid-column-start: 1;
       grid-column-end: 4;
-      justify-self: end;
-    }
-
-    nav.toc {
+      justify-self: center;
       padding-right: 3em;
       padding-left: 2em;
-      border-right: 1px solid rgba(0, 0, 0, 0.1);
-      border-right-width: 1px;
-      border-right-style: solid;
-      border-right-color: rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -822,7 +803,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 60%;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 3px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-weight: 500;
   }
 
@@ -848,7 +829,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 0;
     margin-bottom: 0.5em;
     font-weight: 400;
-    text-transform: lowercase;
+    text-transform: uppercase;
   }
 
   .sidebar-section {
@@ -1053,21 +1034,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
-  @keyframes highlight-target {
-    0% {
-      background-color: #ffa;
-    }
-    66% {
-      background-color: #ffa;
-    }
-    100% {
-      background-color: none;
-    }
-  }
-
-  d-article :target, d-appendix :target {
-     animation: highlight-target 3s;
-  }
 
   </style>
 
@@ -1257,8 +1223,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
         $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
 
       // published date
-      // if (!front_matter.publishedDate)
-      //   hide_byline_column("Published");
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
 
       // document object identifier
       var doi = $('d-byline').find('h3:contains("DOI")');
@@ -1471,8 +1437,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="2021-1_files/header-attrs-2.9/header-attrs.js"></script>
-  <script src="2021-1_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="2021-1_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="2021-1_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="2021-1_files/popper-2.6.0/popper.min.js"></script>
   <link href="2021-1_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="2021-1_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -1483,6 +1449,131 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="2021-1_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
+  <script>
+    $(function() {
+      console.log("Starting...")
+
+      // Always show Published - distill hides it if not set
+      function show_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'visible');
+      }
+
+      show_byline_column('Published')
+
+      // tweak function
+      var rmd_meta = JSON.parse($("#radix-rmarkdown-metadata").html());
+      function get_meta(name, meta) {
+        var ind = meta.attributes.names.value.findIndex((e) => e == name)
+        var val = meta.value[ind]
+        if (val.type != 'list') {
+          return val.value.toString()
+        }
+        return val
+      }
+
+      // tweak description
+      $("d-title p:not(:empty)").first().prepend("<b>Abstract</b><br>")
+
+      // Add clickable tags
+      const slug = get_meta('slug', rmd_meta)
+      const doi = get_meta('doi', rmd_meta)
+
+      var title = $("d-title h1").text()
+
+      const newdiv = $('<div class="dt-tags" style="grid-column: page;">')
+      newdiv.append('<a href="#citation" class="dt-tag"><i class="fas fa-quote-left"></i> Cite</a>')
+      newdiv.append('<a href="' + slug + '" class="dt-tag"><i class="fas fa-file-pdf"></i> PDF</a>')
+      newdiv.append('<a href="https://twitter.com/intent/tweet?text=$title$&url=https%3A%2F%2Fdoi.org%2F' + doi + '" class="dt-tag"><i class="fab fa-twitter"></i> Tweet</a>')
+      $('d-title').append(newdiv)
+
+      // tweak by-line
+      var byline = $("d-byline div.byline")
+      ind = rmd_meta.attributes.names.value.findIndex((e) => e == "journal")
+      const journal = get_meta('journal', rmd_meta)
+      const volume = get_meta('volume', rmd_meta)
+      const issue = get_meta('issue', rmd_meta)
+      const jrtitle = get_meta('title', journal)
+      const firstpage = get_meta('firstpage', journal)
+      const lastpage = get_meta('lastpage', journal)
+      byline.append('<div class="rjournal grid">')
+      $('div.rjournal').append('<h3>Volume</h3>')
+      $('div.rjournal').append('<h3>Pages</h3>')
+      $('div.rjournal').append('<p class="volume">'+volume+':'+issue+'</p>')
+      $('div.rjournal').append('<p class="pages">'+firstpage+'-'+lastpage+'</p>')
+
+      const received_date = get_meta('date_received', rmd_meta)
+      byline.find('h3:contains("Published")').parent().append('<h3>Received</h3><p>'+received_date+'</p>')
+
+    })
+  </script>
+
+  <style>
+      /*
+    .nav-dropdown-content .nav-dropdown-header {
+      text-transform: lowercase;
+    }
+    */
+
+    d-byline .byline {
+      grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    d-byline .rjournal {
+      grid-column-end: span 2;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 0;
+    }
+
+    d-title h1, d-title p, d-title figure,
+    d-abstract p, d-abstract b {
+      grid-column: page;
+    }
+
+    d-title .dt-tags {
+      grid-column: page;
+    }
+
+    .dt-tags .dt-tag {
+      text-transform: lowercase;
+    }
+
+    d-article h1 {
+      line-height: 1.1em;
+    }
+
+    @media(min-width: 1000px) {
+      .d-contents.d-contents-float {
+        justify-self: end;
+      }
+
+      nav.toc {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .posts-list .dt-tags .dt-tag {
+      text-transform: lowercase;
+    }
+
+    @keyframes highlight-target {
+      0% {
+        background-color: #ffa;
+      }
+      66% {
+        background-color: #ffa;
+      }
+      100% {
+        background-color: none;
+      }
+    }
+
+    d-article :target, d-appendix :target {
+       animation: highlight-target 3s;
+    }
+  </style>
 
 
 </head>
@@ -1492,7 +1583,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Volume 13/1","description":"Articles published in the June 2021 issue","authors":[],"submittedDate":"2021-06-01T00:00:00.000+10:00"}
+{"title":"Volume 13/1","description":"Articles published in the June 2021 issue","authors":[],"publishedDate":"2021-06-01T00:00:00.000+02:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1505,11 +1596,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Volume 13/1</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Articles published in the June 2021 issue</p>
+<p id="d-title-description">Articles published in the June 2021 issue</p>
 </div>
-
-</div>
-</d-abstract>
 
 
 <div class="d-article">
