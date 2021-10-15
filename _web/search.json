@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-15T19:02:10+02:00"
+    },
+    {
+      "path": "articles.html",
+      "title": "All articles",
+      "description": "All articles accepted into the R Journal.\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-15T19:02:12+02:00"
+    },
+    {
+      "path": "index.html",
+      "title": "The R Journal",
+      "author": [],
+      "contents": "\r\n\r\n\r\nd-article > * {\r\n    grid-column: page;\r\n}\r\n\r\np > span.doi, td > span.doi {\r\n  display: block;\r\n  color: grey;\r\n  font-family: \"Open Sans\", sans-serif;\r\n  font-size: 14px;\r\n}\r\n.minor-details {\r\n  display: block;\r\n  color: grey;\r\n  font-family: \"Open Sans\", sans-serif;\r\n  font-size: 14px;\r\n  line-height: 1.5em;\r\n  margin-bottom: 0;\r\n  /* line-height: normal; */\r\n}\r\n.distill-table {\r\n  font-size: 100%;\r\n  line-height: 1.2em;\r\n}\r\n.distill-table .normal-row:first-of-type td {\r\n  padding-top: 0px;\r\n}\r\n.distill-table .normal-row:last-of-type td {\r\n  padding-bottom: 10px;\r\n  border-bottom: 1px solid rgba(0, 0, 0, 0.0);\r\n}\r\n.distill-table .normal-row td {\r\n  padding-top: 15px;\r\n  padding-bottom: 15px;\r\n  vertical-align: top;\r\n  border-bottom: 1px solid rgba(0, 0, 0, 0.0);\r\n}\r\n.distill-table .normal-row .property {\r\n  padding-right: 20px;\r\n  font-weight: bold;\r\n}\r\n.distill-table td.wide {\r\n  min-width: 120px;\r\n}\r\n.update {\r\n  background-color: hsla(24, 100%, 50%, 0.05); \r\n  border-left: 3px solid hsl(24, 100%, 50%); \r\n  padding-left: 1em;\r\n}\r\n\r\nThe R Journal is the open access, refereed journal of the R project for statistical computing. It features short to medium length articles covering topics that should be of interest to users or developers of R.\r\nThe R Journal intends to reach a wide audience and have a thorough review process. Papers are expected to be reasonably short, clearly written, not too technical, and of course focused on R. Authors of refereed articles should take care to:\r\nput their contribution in context, in particular discuss related R functions or packages;\r\nexplain the motivation for their contribution;\r\nprovide code examples that are reproducible.\r\nArticle types\r\nThe R Journal accepts a variety of article topics including:\r\n\r\nReviews and proposals: surveying and discussing challenges and opportunities of potential importance for the broader R community, including proposals and proof-of-concept implementations.\r\nComparisons and benchmarking: of implementations in base-R and contributed packages with each other, and where relevant with implementations in other software systems.\r\nApplications: demonstrating how new or existing techniques can be applied in an area of current interest using R, providing a fresh view of such analyses in R that is of benefit beyond the specific application.\r\nAdd-on packages: short introductions to contributed R packages that are already available on CRAN or Bioconductor, and going beyond package vignettes in aiming to provide broader context and to attract a wider readership than package users. Authors need to make a strong case for such introductions, based for example on novelty in implementation and use of R, or the introduction of new data structures representing general architectures that invite re-use.\r\nContinuing from R News, The R Journal also has a news section which includes information on:\r\n\r\n\r\nChanges in R\r\n\r\n\r\nNew features of the latest release.\r\n\r\n\r\nChanges on CRAN\r\n\r\n\r\nNew add-on packages, manuals, binary distributions, mirrors, and more.\r\n\r\n\r\nUpcoming conferences\r\n\r\n\r\nAnnouncements of conferences related to R.\r\n\r\n\r\nConference reports\r\n\r\n\r\nOverviews of past conferences related to R.\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-15T19:02:13+02:00"
+    },
+    {
+      "path": "issues.html",
+      "title": "All issues",
+      "description": "Archive of all issues published by The R Journal\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\nd-article > * {\r\n    grid-column: page;\r\n}\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-15T19:02:14+02:00"
+    },
+    {
+      "path": "news.html",
+      "title": "All news",
+      "description": "All news accepted into the R Journal.\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-15T19:02:15+02:00"
+    },
+    {
+      "path": "submissions.html",
+      "title": "Submissions",
+      "description": "Instructions for submitting an article to The R Journal",
+      "author": [],
+      "contents": "\r\n\r\n\r\nd-article > * {\r\n    grid-column: page;\r\n}\r\n\r\nSubmitting PDF-style articles\r\nArticles written for a PDF output format are still being accepted, however we are now encouraging authors to try writing articles with R Markdown using the rjtools package. Using this package allows for submissions suitable for both interactive online articles and static PDF copies.\r\nYou can find the current submission guidelines for PDF-only (non-rmarkdown) articles here: https://journal.r-project.org/submissions.html\r\nSubmitting HTML-style articles\r\nThese instructions are actively being worked on, so please reach out if you have questions or issues. You can get started with an article using the rjtools::create_article() function. This function provides a template that demonstrates the expected structure of R Journal articles in an R Markdown format.\r\nIf you currently use the rticles::rjournal_article output format for R Markdown, you should be simply able to change output formats to rjtools::rjournal_web_article to preview the web format of your article. Existing guidelines for referring to CRAN packages with \\CRANpkg{} and other macros should still work, however other LaTeX specific code will not.\r\nWhen writing your article you should aim to write without specific reference to HTML and LaTeX codes. If you do need to write code specific to the HTML or PDF output, you can use knitr::is_html_output() and knitr::is_latex_output() to conditionally produce a particular output.\r\nThe web articles for the R Journal are based on the [distill framework], which provides several styling and arrangement options for your article contents. The distill R package documentation (generally also applicable to articles written for the R Journal) describes how various article elements can be used: https://rstudio.github.io/distill/\r\nWe are especially looking for creative uses of interactive content in articles, however please aim to keep the file sizes of articles minimal.\r\nInstructions for submitting\r\nNew submission\r\nTo submit a new article to the R Journal, please complete the form linked below. Note that journal policy changed in early 2017, and submissions of the “add-on packages” type will henceforth be subject to more rigorous scrutiny. If you are making a submission of this type, you should prepare a letter explaining how you meet our stronger requirements described prominently at the beginning of this website and in our Instructions for Authors.\r\nIf you have problems, first try to reduce the size of your submission zipfile as much as possible. If this does not help, please contact the Editor-in-Chief at r-journal@r-project.org.\r\nRe-submission or revision\r\nRe-submission and revisions to accepted articles are received through the same site where new submissions are received (link below). When providing a re-submission or revision, please enter the identifier of the original submission in the last field of the submission form below.\r\nClick here to submit an article, re-submission, or revision.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-15T19:02:16+02:00"
+    }
+  ],
+  "collections": ["articles/articles.json", "issues/issues.json", "news/news.json"]
+}

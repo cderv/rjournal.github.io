@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:distill="https://distill.pub/journal/" version="2.0">
+  <channel>
+    <title>The R Journal</title>
+    <link>https://rjournal-distill.netlify.app/</link>
+    <atom:link href="https://rjournal-distill.netlify.app/articles.xml" rel="self" type="application/rss+xml"/>
+    <description>Articles published in the R Journal</description>
+    <image>
+      <title>The R Journal</title>
+      <url>https://rjournal-distill.netlify.app/resources/favicon.ico</url>
+      <link>https://rjournal-distill.netlify.app/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>stratamatch: Prognostic Score Stratification Using a Pilot Design</title>
+      <dc:creator>Rachael C. Aikens</dc:creator>
+      <dc:creator>Joseph Rigdon</dc:creator>
+      <dc:creator>Justin Lee</dc:creator>
+      <dc:creator>Michael Baiocchi</dc:creator>
+      <dc:creator>Andrew B. Goldstone</dc:creator>
+      <dc:creator>Peter Chiu</dc:creator>
+      <dc:creator>Y. Joseph Woo</dc:creator>
+      <dc:creator>Jonathan H. Chen</dc:creator>
+      <link>https://rjournal-distill.netlify.app/articles/RJ-2021-063</link>
+      <description>Optimal propensity score matching has emerged as one of the most ubiquitous approaches
+ for causal inference studies on observational data. However, outstanding critiques of the statistical
+ properties of propensity score matching have cast doubt on the statistical efficiency of this technique,
+ and the poor scalability of optimal matching to large data sets makes this approach inconvenient
+ if not infeasible for sample sizes that are increasingly commonplace in modern observational data.
+ The stratamatch package provides implementation support and diagnostics for ‘stratified matching
+ designs,’ an approach that addresses both of these issues with optimal propensity score matching for
+ large-sample observational studies. First, stratifying the data enables more computationally efficient
+ matching of large data sets. Second, stratamatch implements a ‘pilot design’ approach in order to
+ stratify by a prognostic score, which may increase the precision of the effect estimate and increase
+ power in sensitivity analyses of unmeasured confounding.</description>
+      <guid>https://rjournal-distill.netlify.app/articles/RJ-2021-063</guid>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>BayesSPsurv: An R Package to Estimate Bayesian (Spatial) Split-Population Survival Models</title>
+      <dc:creator>Brandon Bolte</dc:creator>
+      <dc:creator>Nicolás Schmidt</dc:creator>
+      <dc:creator>Sergio Béjar</dc:creator>
+      <dc:creator>Nguyen Huynh</dc:creator>
+      <dc:creator>Bumba Mukherjee</dc:creator>
+      <link>https://rjournal-distill.netlify.app/articles/RJ-2021-068</link>
+      <description>Survival data often include a fraction of units that are susceptible to an event of interest
+ as well as a fraction of “immune” units. In many applications, spatial clustering in unobserved risk
+ factors across nearby units can also affect their survival rates and odds of becoming immune. To
+ address these methodological challenges, this article introduces our BayesSPsurv R-package, which
+ fits parametric Bayesian Spatial split-population survival (cure) models that can account for spatial
+ autocorrelation in both subpopulations of the user’s time-to-event data. Spatial autocorrelation is
+ modeled with spatially weighted frailties, which are estimated using a conditionally autoregressive
+ prior. The user can also fit parametric cure models with or without nonspatial i.i.d. frailties, and
+ each model can incorporate time-varying covariates. BayesSPsurv also includes various functions to
+ conduct pre-estimation spatial autocorrelation tests, visualize results, and assess model performance,
+ all of which are illustrated using data on post-civil war peace survival.</description>
+      <guid>https://rjournal-distill.netlify.app/articles/RJ-2021-068</guid>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ROCnReg: An R Package for Receiver Operating Characteristic Curve Inference With and Without Covariates</title>
+      <dc:creator>María Xosé Rodríguez-Álvarez</dc:creator>
+      <dc:creator>Vanda Inácio</dc:creator>
+      <link>https://rjournal-distill.netlify.app/articles/RJ-2021-066</link>
+      <description>This paper introduces the package ROCnReg that allows estimating the pooled ROC
+ curve, the covariate-specific ROC curve, and the covariate-adjusted ROC curve by different methods,
+ both from (semi) parametric and nonparametric perspectives and within Bayesian and frequentist
+ paradigms. From the estimated ROC curve (pooled, covariate-specific, or covariate-adjusted), several
+ summary measures of discriminatory accuracy, such as the (partial) area under the ROC curve and the
+ Youden index, can be obtained. The package also provides functions to obtain ROC-based optimal
+ threshold values using several criteria, namely, the Youden index criterion and the criterion that
+ sets a target value for the false positive fraction. For the Bayesian methods, we provide tools for
+ assessing model fit via posterior predictive checks, while the model choice can be carried out via
+ several information criteria. Numerical and graphical outputs are provided for all methods. This is
+ the only package implementing Bayesian procedures for ROC curves.</description>
+      <guid>https://rjournal-distill.netlify.app/articles/RJ-2021-066</guid>
+      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The bdpar Package: Big Data Pipelining Architecture for R</title>
+      <dc:creator>Miguel Ferreiro-Díaz</dc:creator>
+      <dc:creator>Tomás R. Cotos-Yáñez</dc:creator>
+      <dc:creator>José R. Méndez</dc:creator>
+      <dc:creator>David Ruano-Ordás</dc:creator>
+      <link>https://rjournal-distill.netlify.app/articles/RJ-2021-065</link>
+      <description>In the last years, big data has become a useful paradigm for taking advantage of multiple
+ sources to find relevant knowledge in real domains (such as the design of personalized marketing
+ campaigns or helping to palliate the effects of several fatal diseases). Big data programming tools and
+ methods have evolved over time from a MapReduce to a pipeline-based archetype. Concretely the use
+ of pipelining schemes has become the most reliable way of processing and analyzing large amounts of
+ data. To this end, this work introduces bdpar, a new highly customizable pipeline-based framework
+ (using the OOP paradigm provided by R6 package) able to execute multiple preprocessing tasks over
+ heterogeneous data sources. Moreover, to increase the flexibility and performance, bdpar provides
+ helpful features such as (i) the definition of a novel object-based pipe operator (%&gt;|%), (ii) the ability to
+ easily design and deploy new (and customized) input data parsers, tasks, and pipelines, (iii) only-once
+ execution which avoids the execution of previously processed information (instances), guaranteeing
+ that only new both input data and pipelines are executed, (iv) the capability to perform serial or
+ parallel operations according to the user needs, (v) the inclusion of a debugging mechanism which
+ allows users to check the status of each instance (and find possible errors) throughout the process.</description>
+      <guid>https://rjournal-distill.netlify.app/articles/RJ-2021-065</guid>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
